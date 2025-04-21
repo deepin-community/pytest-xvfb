@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE = 1
+
+export PYBUILD_NAME = pytest-qt
+# The tests can only be run against the installed package.
+export PYBUILD_DISABLE = test
+
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild

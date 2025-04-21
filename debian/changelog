@@ -1,5 +1,95 @@
-template-repository (1.0-1) unstable; urgency=medium
+pytest-xvfb (3.0.0-3) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Fix d/watch for new PyPi archive naming policy
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Nick Morrott ]
+  * Remove myself from Uploaders
+
+ -- Alexandre Detiste <tchet@debian.org>  Sat, 15 Mar 2025 13:07:25 +0100
+
+pytest-xvfb (3.0.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Restrict QtWebEngine tests to architectures which support it
+
+ -- Julian Gilbey <jdg@debian.org>  Fri, 24 Nov 2023 06:34:12 +0000
+
+pytest-xvfb (3.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 3.0.0
+  * Specify Rules-Requires-Root: no
+
+ -- Julian Gilbey <jdg@debian.org>  Thu, 23 Nov 2023 22:07:09 +0000
+
+pytest-xvfb (2.0.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Remove constraints unnecessary since buster (oldstable):
+    + Build-Depends: Drop versioned constraint on python3-pytest.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 27 Nov 2022 15:39:47 +0000
+
+pytest-xvfb (2.0.0-1) unstable; urgency=medium
+
+  [ Joseph Nuthalapati ]
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 4.5.1.
+  * Bump debhelper compat level to 13.
+
+  [ Sandro Tosi ]
+  * debian/control
+    - bump b-d on pyvirtualdisplay to >= 1.3
+  * debian/tests/control
+    - fix/enhance autopkgtests
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 07 Nov 2021 23:11:11 -0500
+
+pytest-xvfb (1.2.0-2) UNRELEASED; urgency=medium
+
+  [ Nick Morrott ]
+  * Add myself to Uploaders.
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Nick Morrott <knowledgejunkie@gmail.com>  Thu, 15 Aug 2019 05:08:56 +0100
+
+pytest-xvfb (1.2.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python3-Version field
+  * Use debhelper-compat instead of debian/compat.
+  * Bump required version of pytest.
+  * Disable failing test.
+  * d/patches: Remove, not needed anymore.
+  * Bump debhelper compat level to 12.
+  * Bump standards version to 4.4.0 (no changes).
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 09 Aug 2019 21:25:26 +0200
+
+pytest-xvfb (1.0.0-2) unstable; urgency=medium
+
+  * Run autopkgtests for all supported Python versions
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 23 Feb 2017 15:46:45 +0000
+
+pytest-xvfb (1.0.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #854673)
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 09 Feb 2017 12:22:16 +0000
